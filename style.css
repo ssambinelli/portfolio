@@ -1,0 +1,173 @@
+@font-face {
+    src: url(romantica-font/Romantica-RpXpW.ttf);
+    font-family: signature;
+}
+
+/* Fonts  */
+/* font-family: 'Alex Brush', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Italianno', cursive;
+font-family: 'Pinyon Script', cursive;
+font-family: 'Quattrocento Sans', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* General  */
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    text-align: center;
+    /* padding: 2rem 0; */
+    font-family: Italianno;
+    letter-spacing: 0.1rem;
+    font-size: 4rem;
+}
+
+h2{
+    padding-bottom:  1rem;
+}
+
+h3{
+    font-family: Cinzel;
+}
+p{
+    font-family: Quattrocento Sans;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+body{
+    background-color: rgb(246, 249, 247);
+    font-family: 'EB Garamond', serif;
+}
+
+/* NavBar */
+#nav1{
+    visibility: hidden;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(236, 207, 207, 1);
+    position: sticky;
+    top: 0;
+}
+
+#ss-logo{
+    font-family: signature;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+#nav-list{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+#nav-list :hover{
+    color: rgb(64, 100, 54);
+}
+
+.nav-title{
+    font-family:Cinzel ;
+}
+
+/* About me container  */
+.containers{
+    display: flex;
+    margin: 4% 18%;
+    align-items: center;
+    gap: 3rem;
+    justify-content: space-around;
+    padding: 2rem 0;
+    /* border: 1px solid rgb(204, 203, 203);  */
+    /* border-radius: 15px;   */
+    /* Remove border eventually */
+    height: 20rem;
+    text-align: center;
+}
+
+.subtitulo{
+    font-family:Cinzel;
+}
+.text-about h1 span{
+    color: rgb(5, 40, 5);
+}
+.photo{
+    width: 20rem;
+    border-radius: 50%;
+    border: 0.4rem solid rgb(203, 204, 204);
+}
+
+
+button{
+    padding: 0.7rem;
+    border-radius: 1.5rem;
+    background-color:rgba(236, 207, 207, 1);
+    font-family: Quattrocento Sans;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 1.2rem;
+    text-align: center;
+    box-shadow: 0.2rem 0.2rem rgb(203, 204, 204);
+}
+
+button :hover{
+    color: white;
+}
+/* Projects Container */
+.projects{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.projects li{
+    padding: 2rem 0;
+    border: 3px solid grey; 
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.projects img {
+    width: 100%;
+    border-radius: 20%;
+    height: 8rem;
+    -webkit-filter: grayscale(100%); /*Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.contact{
+    display: flex;
+}
+
+/* Footer  */
+footer{
+    background-color: rgba(236, 207, 207, 1);
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer p{
+    font-family: Cinzel;
+    font-size: 0.8rem;
+}
