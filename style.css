@@ -2,7 +2,13 @@
     src: url(romantica-font/Romantica-RpXpW.ttf);
     font-family: signature;
 }
+@font-face {
+    font-family: strange;
+    src: url(StrangeDreams-ZVRzl.ttf);
+}
 
+    /* --goldcolor: rgb(207,150,69); */
+    
 /* Fonts  */
 /* font-family: 'Alex Brush', cursive;
 font-family: 'Cinzel', serif;
@@ -52,6 +58,7 @@ body{
     background-image: linear-gradient( rgba(236, 207, 207, 0.859),rgba(225, 189, 189, 0.372), rgba(97, 117, 91, 0.464), rgb(64, 100, 54));
     /* background-color: rgb(246, 249, 247); */
     font-family: 'EB Garamond', serif;
+    transition: 2s;
 }
 
 /* NavBar */
@@ -73,7 +80,6 @@ nav{
     font-family: signature;
     padding: 0.5rem;
     font-size: 2rem;
-    animation: typing 3s steps(18,end);
 }
 
 .ss-logo::after{
@@ -125,11 +131,11 @@ nav{
     width: 100%;
     white-space: none;
     overflow: hidden;
-    animation: typing 2s steps(15), cursor 0.4s step-end infinite alternate;
+    /* animation: typing 2s steps(15), cursor 0.4s step-end infinite alternate; */
     /* -webkit-animation-delay: 1s;
     animation-delay: 1s; */
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+    /* -webkit-animation-fill-mode: forwards; */
+    /* animation-fill-mode: forwards; */
 }
 
 @keyframes cursor{
@@ -142,25 +148,32 @@ nav{
 .photo{
     width: 20rem;
     border-radius: 50%;
+    cursor: pointer;
     border: 0.4rem solid rgb(203, 204, 204);
+    transition: 1s;
 }
 
 
 button{
-    padding: 0.7rem;
-    border-radius: 1.5rem;
+    padding: 0.6rem;
+    border-radius: 0.5em;
+    border: none;
     background-color:rgba(236, 207, 207, 1);
     font-family: Quattrocento Sans;
     font-weight: bold;
     font-size: 0.9rem;
     margin: 1.2rem;
     text-align: center;
-    box-shadow: 0.2rem 0.2rem rgb(203, 204, 204);
 }
 
 button :hover{
-    color: white;
+    color: rgb(64, 100, 54);
 }
+
+.grow:hover{
+    transform: scale(1.1);
+}
+
 /* Projects Container */
 .projects{
     display: flex;
@@ -185,11 +198,13 @@ button :hover{
     height: 8rem;
     -webkit-filter: grayscale(100%); /*Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+    opacity: 0.9;
 }
 
 .projects img:hover{
     -webkit-filter: grayscale(10%); /*Safari 6.0 - 9.0 */
     filter: grayscale(10%);
+    opacity: 0.9;
 }
 
 .tech{
@@ -246,4 +261,82 @@ footer p{
 }
 
 
+/* Dark Mode  */
+body.dark{
+    background-color: black;
+    background-image: linear-gradient(black,rgb(4, 4, 4), rgb(4, 18, 4));
+    color: rgb(245, 233, 233);
+    transition: 2s;
+}
 
+/* Dark Mode NavBar  */
+body.dark nav{
+    background-color: black;
+    color: rgb(211, 210, 210);
+    box-shadow: 0 2px 4px rgb(13, 14, 13);
+}
+
+body.dark nav ul li a{
+    color: rgb(211, 210, 210);
+}
+
+body.dark .ss-logo{
+    font-family: signature;
+    padding: 0.5rem;
+    font-size: 2rem;
+    color: rgb(211, 210, 210);
+}
+
+body.dark #nav-list :hover{
+    color:rgb(207,150,69);
+}
+body.dark h1{
+    font-family: strange;
+    font-size: 2rem;
+    color: rgb(161, 114, 48);
+}
+
+body.dark .text-about h1 span{
+    color: rgb(161, 114, 48);
+}
+
+body.dark .subtitulo{
+    font-family: cinzel;
+    color: rgb(211, 210, 210);
+}
+
+body.dark #title-about{
+    font-size: 4rem;
+}
+body.dark button{
+    background-color: rgb(161, 114, 48);
+}
+
+body.dark .tech p{
+    border: 1px dotted rgb(207,150,69);
+    color: rgb(207,150,69);
+}
+
+body.dark .photo{
+    border: 0.4rem solid rgb(25, 26, 26);
+    content: url(imgs/dark.JPG);
+}
+
+body.dark .projects img{
+    opacity: 0.6;
+}
+
+body.dark .project-links a img:hover{
+    filter:invert();
+}
+
+body.dark #contact ul li a img:hover{
+    filter: invert();
+}
+
+/* Dark Mode Footer  */
+body.dark footer{
+    background-color: rgb(1, 18, 1);
+    color: rgb(156, 154, 154);
+    box-shadow: 1px -2px rgb(25, 26, 25);
+}

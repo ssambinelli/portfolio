@@ -17,7 +17,7 @@
 <link rel=”icon” href="imgs/logo.png" type=”image/x-icon”/>
 </head>
 
-<body id="home" >
+<body id="home" class="">
 
     <!-- Navbar -->
     <nav>
@@ -43,19 +43,23 @@
     <!-- About me container -->
     <div class="containers" id="about-me">
         <div class="text-about">
-            <h1 class="subtitulo">
+            <h1 class="subtitulo" id="title-about">
                 Hi, I'm <span class="typing">Sabrina</span> 
             </h1>
             <p>Software Development student at Coding Dojo and a Computer Science undergraduate, went from Chemistry to Tech, always analysing and helping to solve problems </p>
             <h3>Wanna know more about me?</h3>
-            <button>
+            <button class="grow">
                 <a href="#">Resume</a>
             </button>
-            <button>
+            <button class="grow">
                 <a href="#contact">Say Hello</a>
             </button>
         </div>
-        <img src="imgs/fairy.JPG" alt="Should be a picture of me" class="photo" >
+        <div class="toggle-mode">
+            <img src="imgs/fairy.JPG" alt="Fairy ai picture" class="photo fairy" onmouseover="dark()"; onmouseleave="dark()">
+            <!-- //  <img src="imgs/dark.JPG" alt="Dark ai picture" class="witch photo">  -->
+
+        </div>
     </div>
 
     <!-- Portfolio -->
@@ -70,8 +74,8 @@
                         <p>php</p>
                     </div>
                     <div class="project-links">
-                        <a href="https://ssambinelli.github.io/Bikcraft/" target="_blank"><img src="imgs/shuttle.png" alt="Rocket"></a>
-                        <a href="https://github.com/ssambinelli/Bikcraft" target="_blank"><img src="imgs/github.svg" alt=""></a>
+                        <a href="https://ssambinelli.github.io/Bikcraft/" target="_blank"><img src="imgs/shuttle.png" alt="Rocket" class="grow"></a>
+                        <a href="https://github.com/ssambinelli/Bikcraft" target="_blank"><img src="imgs/github.svg" alt="GitHub" class="grow"></a>
                     </div>
                 </li>
 
@@ -84,8 +88,8 @@
                         <p>javascript</p>
                     </div>
                     <div class="project-links">
-                        <a href="https://ssambinelli.github.io/TicTacToe/" target="_blank"><img src="imgs/shuttle.png" alt="Rocket"></a>
-                        <a href="https://github.com/ssambinelli/TicTacToe" target="_blank"><img src="imgs/github.svg" alt=""></a>
+                        <a href="https://ssambinelli.github.io/TicTacToe/" target="_blank"><img src="imgs/shuttle.png" alt="Rocket" class="grow"></a>
+                        <a href="https://github.com/ssambinelli/TicTacToe" target="_blank"><img src="imgs/github.svg" alt="GitHub" class="grow"></a>
                     </div>
                 </li>
 
@@ -98,8 +102,8 @@
                     <p>javascript</p>
                 </div>
                 <div class="project-links">
-                    <a href="https://ssambinelli.github.io/Calculator/" target="_blank"><img src="imgs/shuttle.png" alt="Rocket"></a>
-                    <a href="https://github.com/ssambinelli/Calculator" target="_blank"><img src="imgs/github.svg" alt=""></a>
+                    <a href="https://ssambinelli.github.io/Calculator/" target="_blank"><img src="imgs/shuttle.png" alt="Rocket" class="grow"></a>
+                    <a href="https://github.com/ssambinelli/Calculator" target="_blank"><img src="imgs/github.svg" alt="GitHub" class="grow"></a>
                 </div>
             </li>
         </ul>
@@ -108,17 +112,17 @@
         <h1 class="contact">Let's get in touch</h1>
         <div class="containers" id="contact">
             <ul class="projects">
-                <li>
+                <li class="grow">
                     <a target="_blank" href="mailto: ssambinelli@icloud.com">
                         <img src="imgs/email-2.png" alt="GitHub">
                     </a>
                 </li>
-                <li>
+                <li class="grow">
                     <a target="_blank" href="https://github.com/ssambinelli/">
                         <img src="imgs/github.png" alt="GitHub">
                     </a>
                 </li>
-                <li>
+                <li class="grow">
                     <a target="_blank" href="#">
                         <img src="imgs/linkedin.png" alt="GitHub">
                     </a>
