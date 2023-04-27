@@ -5,12 +5,13 @@
 function dark(){
 
   var today = new Date();
-  var time = today.getHours()
-  console.log(time);
+  // var time = today.getHours()
+  var time=19
   
   if (time >= 18) {
     document.body.classList.toggle('dark');
-} if (time >= 6 && time <18){
+
+} else{
   document.body.remove.classList.toggle('dark');
 }
 

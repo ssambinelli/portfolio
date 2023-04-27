@@ -121,7 +121,7 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-background-color: rgb(161, 114, 48);
+background-color: rgb(64, 100, 54);
 -webkit-transition: .4s;
 transition: .4s;
 }
@@ -139,11 +139,11 @@ transition: .4s;
 }
 
 input:checked + .slider {
-background-color:  rgb(64, 100, 54);
+background-color:  rgb(161, 114, 48);
 }
 
 input:focus + .slider {
-box-shadow: 0 0 1px  rgb(64, 100, 54)
+box-shadow: 0 0 1px  rgb(161, 114, 48);
 }
 
 input:checked + .slider:before {
@@ -306,9 +306,9 @@ footer p{
 /* Dark Mode  */
 body.dark{
     background-color: black;
-    background-image: linear-gradient(black,rgb(4, 4, 4), rgb(4, 18, 4));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.912),rgba(4, 4, 4, 0.812), rgba(4, 18, 4, 0.718));
     color: rgb(245, 233, 233);
-    transition: 2s;
+    /* transition: 2s; */
 }
 
 /* Dark Mode NavBar  */
