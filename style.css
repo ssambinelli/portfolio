@@ -303,7 +303,7 @@ footer p{
 /* Dark Mode  */
 body.dark{
     background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.912),rgba(4, 4, 4, 0.812), rgba(4, 18, 4, 0.718));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.912),rgba(32, 40, 34, 0.812), rgba(9, 42, 9, 0.718));
     color: rgb(245, 233, 233);
     /* transition: 2s; */
 }
