@@ -35,7 +35,7 @@ a{
 
 h1{
     text-align: center;
-    /* padding: 2rem 0; */
+    padding: 2rem 0;
     font-family: Italianno;
     letter-spacing: 0.1rem;
     font-size: 4rem;
@@ -235,6 +235,7 @@ button :hover{
     width: 100%;
     border-radius: 20%;
     height: 8rem;
+    width: 10rem;
     -webkit-filter: grayscale(100%); /*Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     opacity: 0.9;
@@ -276,7 +277,7 @@ button :hover{
 
 /* Contact Container  */
 .contact {
-    margin: 8rem 0 2rem 0 ;
+    margin-top: 0;
 }
 
 #contact img{
